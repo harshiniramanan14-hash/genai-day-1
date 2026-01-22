@@ -43,7 +43,7 @@ def upload_to_drive(filename, text_content):
     return file.get('id'), file.get('name')
     
  # --- 2. Groq AI Setup ---
-st.image("pic.png", caption="HarshAI Logo", use_container_width=True)
+st.image("Snapchat-595750831.jpg",caption="HarshAI Logo", use_container_width=True)
 st.set_page_config(page_title="✨HarshAI GenAI → Google Drive Export✨")
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
