@@ -42,7 +42,7 @@ def upload_to_drive(filename, text_content):
 
     return file.get('id'), file.get('name')
  # --- 2. Groq AI Setup ---
-st.set_page_config(page_title="PragyanAI GenAI → Google Drive Export")
+st.set_page_config(page_title="✨HarshAI GenAI → Google Drive Export✨")
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # --- 3. UI Implementation ---
