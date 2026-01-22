@@ -41,12 +41,14 @@ def upload_to_drive(filename, text_content):
     ).execute()
 
     return file.get('id'), file.get('name')
+    
  # --- 2. Groq AI Setup ---
+st.image("pic.png", caption="HarshAI Logo", use_container_width=True)
 st.set_page_config(page_title="✨HarshAI GenAI → Google Drive Export✨")
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # --- 3. UI Implementation ---
-st.title("📢 PragyanAI Marketing Content Generator")
+st.title("✨ HarshAI Marketing Content Generator")
 st.info("Files will be uploaded to the Service Account's Drive. Make sure to share your target folder with the service account email.")
 
 # Sidebar/Inputs
